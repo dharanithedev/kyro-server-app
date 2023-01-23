@@ -7,13 +7,11 @@ const app = express();
 
 const user = require('./routes/api/user');
 
-// Connect Database
 connectDB();
+
 app.use(cors({ origin: true, credentials: true }));
 
 app.use(express.json({ extended: false }));
-
-app.get('/', (req, res) => res.send('Hello world!'));
 
 app.use('/api/user', user);
 

@@ -8,7 +8,7 @@
       await mongoose.connect(db, {
         useNewUrlParser: true,
       });
-      console.log('MongoDB is Connected...');
+      console.log('Connected with MongoDB Cloud!');
     } catch (err) {
       console.error(err.message);
       process.exit(1);
